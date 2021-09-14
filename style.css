@@ -100,7 +100,7 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: rgba(255, 255, 255, .7);   
 }
 
 .d-bloc button:hover {
@@ -687,6 +687,8 @@ p {
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
+    display: flex;
+    justify-content: center;
 }
 
 .h1 {
