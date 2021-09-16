@@ -1,3 +1,4 @@
+
 SetOutputFilter DEFLATE
 AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript
 
@@ -6,15 +7,15 @@ BrowserMatch ^Mozilla/4\.0[678] no-gzip
 BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
 
-# Extra Security Headers
-<IfModule mod_headers.c>
-	Header set X-XSS-Protection "1; mode=block"
-	Header always append X-Frame-Options SAMEORIGIN
-	Header set X-Content-Type-Options nosniff
-</IfModule>
-
 # BEGIN Cache-Control Headers
 <IfModule mod_headers.c>
+Header set X-XSS-Protection "1; mode=block"
+Header always append X-Frame-Options SAMEORIGIN
+Header set X-Content-Type-Options nosniff
+<files ~ ".(js|css)$"="&quot;.(js|css)$&quot;">
+order allow,deny
+allow from all
+</files>
 <FilesMatch "\.(ico|jpe?g|png|gif|swf|css|gz)$">
 Header set Cache-Control "max-age=2592000, public"
 </FilesMatch>
