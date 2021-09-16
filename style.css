@@ -692,8 +692,8 @@ p {
     justify-content: center;
 }
 .img-responsive {
-    width: 270px;
-    height: 270px;
+    max-width: 270px;
+    max-height: 270px;
 }
 .image-resize-mode {
     width: 100px;
