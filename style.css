@@ -693,11 +693,11 @@ p {
 }
 .img-responsive {
     width: 270px;
-    height: auto;
+    height: 270px;
 }
 .image-resize-mode {
     width: 100px;
-    height: auto;
+    height: 100px;
 }
 .h1 {
     font-size: 20px;
@@ -834,6 +834,7 @@ h4 {
 .bg-banniere {
     background-image: url("img/la-chouette-agence-banniere.webp");
     background-size: cover;
+    margin-bottom: -29px;
 }
 
 .bg-presentation {
