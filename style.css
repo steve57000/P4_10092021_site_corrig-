@@ -362,7 +362,7 @@ a:hover {
     z-index: 2;
 }
 q {
-    font: bold black;
+    font-weight: 400;
 }
 @media (min-width: 768px) {
     .site-navigation {
