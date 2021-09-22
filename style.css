@@ -361,7 +361,9 @@ a:hover {
     position: relative;
     z-index: 2;
 }
-
+q {
+    font-weight: bold;
+}
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
