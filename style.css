@@ -363,6 +363,7 @@ a:hover {
 }
 q {
     font-weight: 600;
+    color: black;
 }
 @media (min-width: 768px) {
     .site-navigation {
