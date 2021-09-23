@@ -54,11 +54,6 @@ a {
     background-color: transparent
 }
 
-a:active,
-a:hover {
-    outline: 0
-}
-
 abbr[title] {
     border-bottom: 1px dotted
 }
@@ -1414,11 +1409,11 @@ a {
 a:focus,
 a:hover {
     color: #23527c;
-    text-decoration: underline
+    text-decoration: underline  
 }
 
 a:focus {
-    outline: thin dotted;
+    outline: 3px ridge rgba(170, 50, 220, .6);
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px
 }
@@ -3103,7 +3098,7 @@ select[size] {
 input[type=file]:focus,
 input[type=checkbox]:focus,
 input[type=radio]:focus {
-    outline: thin dotted;
+    outline: 3px ridge rgba(170, 50, 220, .6);
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px
 }
@@ -3137,7 +3132,6 @@ output {
 
 .form-control:focus {
     border-color: #66afe9;
-    outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)
 }
@@ -3661,7 +3655,7 @@ textarea.input-lg {
 .btn:active.focus,
 .btn:active:focus,
 .btn:focus {
-    outline: thin dotted;
+    outline: 3px ridge rgba(170, 50, 220, .6);
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px
 }
@@ -3676,7 +3670,6 @@ textarea.input-lg {
 .btn.active,
 .btn:active {
     background-image: none;
-    outline: 0;
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
 }
@@ -4276,10 +4269,6 @@ tbody.collapse.in {
     position: relative
 }
 
-.dropdown-toggle:focus {
-    outline: 0
-}
-
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -4338,7 +4327,6 @@ tbody.collapse.in {
     color: #fff;
     text-decoration: none;
     background-color: #337ab7;
-    outline: 0
 }
 
 .dropdown-menu>.disabled>a,
@@ -4359,11 +4347,6 @@ tbody.collapse.in {
 .open>.dropdown-menu {
     display: block
 }
-
-.open>a {
-    outline: 0
-}
-
 .dropdown-menu-right {
     right: 0;
     left: auto
@@ -4510,7 +4493,6 @@ tbody.collapse.in {
 
 .btn-group .dropdown-toggle:active,
 .btn-group.open .dropdown-toggle {
-    outline: 0
 }
 
 .btn-group>.btn+.dropdown-toggle {
@@ -5281,7 +5263,6 @@ button.close {
     display: none;
     overflow: hidden;
     -webkit-overflow-scrolling: touch;
-    outline: 0
 }
 
 .modal.fade .modal-dialog {
@@ -5320,7 +5301,6 @@ button.close {
     border: 1px solid #999;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 6px;
-    outline: 0;
     -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
     box-shadow: 0 3px 9px rgba(0, 0, 0, .5)
 }
@@ -5824,7 +5804,6 @@ button.close {
     color: #fff;
     text-decoration: none;
     filter: alpha(opacity=90);
-    outline: 0;
     opacity: .9
 }
 
